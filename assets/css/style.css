@@ -1,0 +1,829 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('/assets/fonts/HVD\ Fonts\ -\ BrandonGrotesque-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon regular';
+    src: url('/assets/fonts/HVD\ Fonts\ -\ BrandonGrotesque-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Italic-VariableFont_wght.ttf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway bold';
+    src: url('/assets/fonts/Raleway-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway regular';
+    src: url('/assets/fonts/Raleway-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/Mostardesign\ -\ Sofia\ Pro\ Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palmer Lake Print';
+    src: url('/assets/fonts/Jen\ Wagner\ Co.\ -\ Palmer\ Lake\ Print\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Brandon Grotesque', sans-serif;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Header */
+.navbar {
+    font-family: Brandon regular;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1A3B50;
+    padding: 10px 20px;
+}
+
+.left,
+.center,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.book-session {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    line-height: 24.31px;
+}
+
+.book-session:hover {
+    opacity: 0.5;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background-color: #1A3B50;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner .highlight {
+    color: #f27e63;
+}
+
+.banner .subheading {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.content h2 {
+    font-size: 49.5px;
+    color: #15364C;
+    margin-bottom: 20px;
+    line-height: 31.46px;
+    font-weight: 800;
+    font-family: Raleway;
+
+}
+
+.storefront img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.information {
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 24.75px;
+    font-family: Sofia Pro;
+}
+
+.apply-btn {
+    font-family: Sofia Pro;
+    background-color: #E8D0CD;
+    color: #15364C;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: Sofia Pro;
+}
+
+.apply-btn:hover {
+    background-color: #eeaba2;
+}
+
+section.banner img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.man-img {
+    margin-top: 40px !important;
+}
+
+/*our story*/
+.our-story {
+    padding: 30px;
+    text-align: center;
+    font-family: Sofia Pro;
+    background: #F9F6F4;
+
+}
+
+.our-story h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1A3B50;
+}
+
+.content-sec {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 800px;
+}
+
+.text-section {
+    text-align: left;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    line-height: 24.75px;
+    font-size: 16px;
+    font-family: Sofia Pro;
+    font-weight: 400;
+    color: #2F6079;
+}
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.images-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .content-sec {
+        flex-direction: row;
+    }
+
+    .text-section {
+        flex: 2;
+    }
+
+    .images-section {
+        flex: 1;
+    }
+}
+
+.lake-font {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    font-family: Palmer Lake Print;
+    color: #2F6079;
+
+}
+
+/*how it works */
+.how-it-works {
+    text-align: center;
+    padding: 20px;
+    background-color: #F8F9FB;
+    padding-bottom: 30px;
+}
+
+.how-it-works h2 {
+    padding: 22px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.step img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-family: Raleway bold;
+    font-size: 23px;
+    color: #13364D;
+    margin-bottom: 5px;
+    line-height: 27px;
+}
+
+.step p {
+    font-size: 18px;
+    color: #2F6079;
+    font-weight: 400;
+    font-family: Sofia Pro;
+    line-height: 27.85px;
+}
+
+.learn-more {
+    background-color: #E8D0CD;
+    color: #15364C;
+    ;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 304px;
+    margin-top: 55px;
+    font-family: Sofia Pro;
+    line-height: 26.38px;
+    font-weight: 800;
+}
+
+.learn-more:hover {
+    background-color: #c07a7a;
+}
+
+/* becoming an operating partner*/
+
+.becoming-an-partner .container {
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #F9F6F4;
+
+
+}
+
+section.becoming-an-partner {
+    background: #F9F6F4;
+}
+
+.becoming-an-partner h2 {
+    font-size: 22px;
+    line-height: 31.46px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #15364C;
+
+}
+
+.becoming-an-partner .subtitle {
+    font-size: 16px;
+    color: #6c757d;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: Sofia Pro;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.reason {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 24.75px;
+    color: #2F6079;
+    font-weight: 400;
+
+}
+
+.number {
+    display: inline-block;
+    background-color: #A8DADC;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* design construct */
+.design-construct h2 {
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 31.46px;
+    margin: 20px;
+}
+
+.design-construct {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.design-flex {
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.design-flex p {
+    text-align: left;
+    color: #2F6079;
+
+}
+
+/*training and support*/
+.training-support h2 {
+    margin: 20px;
+    font-size: 22px;
+    line-height: 31.46px;
+    font-weight: 400;
+    font-family: Brandon regular;
+}
+
+.training-support p {
+    font-family: Sofia Pro;
+    font-size: 16px;
+    line-height: 24.75px;
+    font-weight: 400;
+    color: #2F6079;
+
+}
+
+.training-support .container {
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.points ul {
+    color: #2F6079;
+    font-family: Sofia Pro;
+    font-size: 16px;
+    line-height: 24.75px;
+}
+
+.points ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 51px;
+    row-gap: 20px;
+}
+
+section.training-support {
+    background: #F9F6F4;
+}
+
+::marker {
+    color: #9FC4D4;
+}
+
+div#sidebar {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 570px;
+    width: 25%;
+    background-color: rgba(57, 100, 102, 0.445);
+    backdrop-filter: blur(23px) !important;
+}
+
+div#sidebar ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    font-size: 25px;
+}
+
+/*form*/
+.form-container {
+    width: 800px;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #2F6079;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 24.75px;
+    font-family: Sofia Pro;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: #2F6079;
+    margin-bottom: 5px;
+    line-height: 24.75px;
+    font-size: 16px;
+    font-family: Sofia Pro;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-group select {
+    appearance: none;
+    background-color: #ffffff;
+}
+
+.submit-btn {
+    font-family: Sofia Pro;
+    width: 268px;
+    padding: 12px;
+    line-height: 26.38px;
+    background: #E8D0CD;
+    color: #15364C;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.submit-btn:hover {
+    opacity: 0.5;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #AAAFB2;
+    font-family: "Inter", sans-serif;
+    line-height: 19.36px;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+
+input:focus::placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+@media (width<=290px) {
+    .content-sec {
+        width: 200px !important;
+    }
+
+    .learn-more {
+        width: 50%;
+    }
+
+    button.apply-btn {
+        width: 75%;
+    }
+}
+
+@media (max-width:750px) {
+    .form-container {
+        width: 350px;
+        padding: 15px;
+    }
+
+    .banner img {
+        width: 25%;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .storefront img {
+        width: 250px;
+    }
+
+    .content h2 {
+        font-size: 16.5px;
+    }
+
+    button.apply-btn {
+        width: 50%;
+    }
+
+    .content-sec {
+        width: 300px;
+    }
+
+    .text-section p {
+        font-size: 12px;
+    }
+
+    .images-section img {
+        width: 150px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .reasons,
+    .points ul {
+        grid-template-columns: 1fr;
+    }
+
+    .becoming-an-partner .container,
+    .training-support .container {
+        max-width: 350px;
+    }
+
+    .design-flex {
+        display: block;
+    }
+
+    .design-flex p {
+        text-align: center;
+    }
+
+    section.design-construct img,
+    .design-flex img {
+        display: none;
+    }
+
+    div#sidebar {
+        width: 100%;
+    }
+
+    .footer-visible-mobile {
+        display: block !important;
+    }
+
+    .footer-container {
+        display: none !important;
+    }
+
+    .footer-column {
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .icon-new {
+        gap: 28px;
+    }
+}
+
+@media (max-width:790px) {
+    .form-container {
+        width: 600px;
+    }
+
+}
+
+@media (max-width:590px) {
+    .form-container {
+        display: none !important;
+    }
+}
+
+footer {
+    background-color: #10374a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    column-gap: 90px;
+}
+
+.footer-column {
+    margin: 0 20px;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14.5px;
+    line-height: 20.73px;
+    font-weight: 390;
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.icon:hover {
+    color: #cccccc;
+}
+
+.footer-column img {
+    margin-bottom: 21px;
+}
+
+.icon-new {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+a.icon i {
+    font-size: 26px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #AAAFB2;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
